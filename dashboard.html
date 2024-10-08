@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BalanceBite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        .btn {
+            background: white;
+            color: #4CAF50;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        /* Main Styling */
+        main {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Dashboard Cards */
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #4CAF50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Progress Bar Styling */
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 70%; /* Example width, will be dynamic later */
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        /* Chart Placeholder */
+        .chart-placeholder {
+            background-color: #f4f4f4;
+            border: 2px dashed #ddd;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaa;
+            border-radius: 10px;
+        }
+
+        /* Grid Columns */
+        .grid-col-2 {
+            grid-column: span 2;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">BalanceBite</h1>
+                 <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sign.html">Sign In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Nutrition Card -->
+        <section class="card">
+            <h3>Nutrition Goals</h3>
+            <p>Track your daily intake of calories, protein, and other nutrients.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div> <!-- This can be dynamic -->
+            </div>
+            <p>80% of daily calorie goal achieved</p>
+        </section>
+
+        <!-- Exercise Card -->
+        <section class="card">
+            <h3>Exercise Goals</h3>
+            <p>Track your daily exercise activity, calories burned, and steps taken.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div> <!-- This can be dynamic -->
+            </div>
+            <p>60% of daily exercise goal achieved</p>
+        </section>
+
+        <!-- Placeholder for future Chart (can use Chart.js) -->
+        <section class="card grid-col-2">
+            <h3>Health Progress</h3>
+            <div class="chart-placeholder">
+                Chart Placeholder
+            </div>
+            <p>Visualize your progress over time.</p>
+        </section>
+
+        <!-- Mental Health Tracking -->
+        <section class="card grid-col-2">
+            <h3>Mental Health Check-in</h3>
+            <p>Log your daily mood and stress levels to keep track of your mental well-being.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div> <!-- This can be dynamic -->
+            </div>
+            <p>50% of mental health check-ins done for the week</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BalanceBite. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalanceBite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        .btn {
+            background: white;
+            color: #4CAF50;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        /* Hero Section */
+        .hero {
+            background-image: url('E:\D DRIVE\JFSD\Html project files\BB\l.jpg'); /* Add a suitable background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero .btn {
+            background: #fff;
+            color: #4CAF50;
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero .btn:hover {
+            background: #ddd;
+        }
+
+        /* Sections */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .feature-box {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .feature-box p {
+            color: #666;
+        }
+
+        .feature-box .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">BalanceBite</h1>
+                 <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sign.html">Sign In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <h1>Welcome to BalanceBite</h1>
+        <p>Your personalized journey to a healthier lifestyle starts here. Discover the balance between nutrition and wellness.</p>
+        <a href="E:\D DRIVE\JFSD\Html project files\BB\sign.html" class="btn">Get Started</a>
+    </div>
+    <main>
+        <section>
+            <h2>What We Offer</h2>
+            <div class="features">
+                <div class="feature-box">
+                    <div class="icon">🍏</div>
+                    <h3>Personalized Nutrition</h3>
+                    <p>Tailor your meals and snacks based on your unique nutrient needs.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">⚖️</div>
+                    <h3>BMI & Health Tracking</h3>
+                    <p>Monitor your progress and stay in the healthy weight range with our tools.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon">🧠</div>
+                    <h3>Mental Health Support</h3>
+                    <p>Get access to resources and tips to manage stress and mental wellness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <p>At BalanceBite, we are dedicated to promoting a balanced diet and mental well-being for young individuals. Our mission is to detect nutrient deficits early and provide timely intervention for a healthier life.</p>
+        </section>
+    </main>    <footer>
+        <p>&copy; 2024 BalanceBite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
